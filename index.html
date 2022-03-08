@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-08">
+    <title>Home | Manjar Natural</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="jquery-3.6.0.js"></script>
+    <script src="main.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="cabecalho-top">
+            <a href="index.html"><img src="img/logo-manjar-natural.png"></a>
+
+            <div class="divBusca">
+                <input id="txtBusca" autocomplete="off" name="keywords" placeholder="Buscar" type="text">
+                <button type="submit" id="btnBusca"><i data-fa-i2svg=""><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="search" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                            <path fill="#19b425"
+                                d="M504.1 471l-134-134C399.1 301.5 415.1 256.8 415.1 208c0-114.9-93.13-208-208-208S-.0002 93.13-.0002 208S93.12 416 207.1 416c48.79 0 93.55-16.91 129-45.04l134 134C475.7 509.7 481.9 512 488 512s12.28-2.344 16.97-7.031C514.3 495.6 514.3 480.4 504.1 471zM48 208c0-88.22 71.78-160 160-160s160 71.78 160 160s-71.78 160-160 160S48 296.2 48 208z">
+                            </path>
+                        </svg></i>
+                </button>
+            </div>
+
+
+            <div class="cabecalho-direita">
+                <a href="#" id="login"><img src="img/login.png" alt="Login" title="Login"/></a>
+
+                <a href="#" id="compras"><img src="img/cart1.png" alt="Carrinho" title="Carrinho" /></a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button class="mainmenubtn1"><a href="#">Produtos Naturais</a></button>
+                <div class="dropdown-child">
+                    <a href="#">Castanhas e oleaginosas</a>
+                    <a href="#">Grãos e sementes</a>
+                    <a href="#">Farinhas e cereais</a>
+                    <a href="#">Frutas desidratadas</a>
+                    <a href="#">Temperos e condimentos</a>
+                    <a href="#">Chás</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="mainmenubtn2"><a href="#">Suplementos</a></button>
+                <div class="dropdown-child">
+                    <a href="#">Vitaminas</a>
+                    <a href="#">Minerais</a>
+                    <a href="#">Proteína</a>
+                    <a href="#">Lipídios</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="mainmenubtn3"><a href="#">Beleza e bem-estar</a></button>
+                <div class="dropdown-child">
+                    <a href="#">Cosméticos</a>
+                    <a href="#">Óleos essenciais</a>
+                    <a href="#">Energéticos</a>
+                    <a href="#">Florais</a>
+                    <a href="#">Argilas</a>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="form-novidades">
+            <form name="f1">
+                <fieldset>
+                    <legend id="legend">Fique por dentro das novidades e promoções!</legend>
+
+                    <ul id="msg-validacao">
+                        <li class="invisivel">
+                            <label for="invisivel"></label>
+                            <div id="msgnome"><input type="txt" id="invisivel" name="invisivel" /></div>
+                        </li>
+                
+                        <li class="invisivel">
+                            <label for="invisivel"></label>
+                            <div id="msgemail"><input type="txt" id="invisivel" name="invisivel" /></div>
+                        </li>
+                        <li class="invisivel">
+                            <div id="msgfone"><input type="txt" id="invisivel" name="invisivel" /></div>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li class="novidades">
+                            <label for="txtnome"></label>
+                            <input type="txt" id="txtnome" name="nome" onblur="validacaoNome(f1.nome)" placeholder="*Nome" />
+                        </li>
+                        <li class="novidades">
+                            <label for="txtemail"></label>
+                            <input type="txt" id="txtemail" name="email" onblur="validacaoEmail(f1.email)" placeholder="*Email" />
+                        </li>
+                        <li class="novidades">
+                            <label for="txtfone"></label>
+                            <input type="tel" id="txtfone" name="fone" onblur="validacaoFone(f1.fone)" placeholder="Telefone (xx)xxxxx-xxxx"/>
+                        </li>
+                    </ul>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <h2 class="ofertas_titulo">OFERTAS</h2>
+
+        <section id="carrossel">
+            <a id="prev" href="#"><img src="img/left-arrow.png"></a>
+               
+            <div id="slides">
+
+                
+                
+                <ul>
+                    <li class="produtos">
+                        <a href="produto.html"><img alt="Azeite de Oliva Native" title="Azeite de Oliva Extra Virgem" src="img/azeite-oliva-native-extravirgem.jpg" /></a>
+                        <p class="produto-descricao">Azeite de Oliva Extra Virgem 500 mL</p>
+
+                        <p class="produto-preco">R$ 58,76</p>
+                        <p class="produto-estrelas"></p>
+
+                    <div class="icones-produtos">
+                        <img src="img/cart.png" alt="Carrinho" title="Comprar">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                    </div>
+                    </li>
+
+                    <li class="produtos">
+                        <a href="#"><img alt="Castanha do Pará Quebrada" title="Castanha do Pará Quebrada" src="img/castanha-do-para-quebrada.jpg" /></a>
+                        <p class="produto-descricao">Castanha do Pará Quebrada Miúda 1kg</p>
+
+                        <p class="produto-preco">R$ 45,00</p>
+                        <p class="produto-estrelas"></p>
+
+                    <div class="icones-produtos">
+                        <img src="img/cart.png" alt="Carrinho" title="Comprar">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                    </div>
+                    </li>
+
+                    <li class="produtos">
+                        <a href="#"><img alt="Biorich Fermento Iogurte" title="Biorich Fermento Iogurte" src="img/biorich-fermento-para-iogurte.jpg" /></a>
+                        <p class="produto-descricao">Biorich Fermento para Iogurte 3 sachês</p>
+
+                        <p class="produto-preco">R$ 13,38</p>
+                        <p class="produto-estrelas"></p>
+
+                    <div class="icones-produtos">
+                        <img src="img/cart.png" alt="Carrinho" title="Comprar">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                    </div>
+                    </li>
+
+                    <li class="produtos">
+                        <a href="#"><img alt="Frutas Cristalizadas" title="Frutas Cristalizadas" src="img/frutas-cristalizadas.jpg" /></a>
+                        <p class="produto-descricao">Frutas Cristalizadas <br>1kg</p>
+
+                        <p class="produto-preco">R$ 13,38</p>
+                        <p class="produto-estrelas"></p>
+
+                    <div class="icones-produtos">
+                        <img src="img/cart.png" alt="Carrinho" title="Comprar">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                    </div>
+                    </li>
+
+                    <li class="produtos">
+                        <a href="#"><img alt="Extrato de Própolis" title="Extrato de Própolis" src="img/extrato-de-propolis-apis-flora.jpg" /></a>
+                        <p class="produto-descricao">Extrato de Própolis Noite 140mL</p>
+
+                        <p class="produto-preco">R$ 39,42</p>
+                        <p class="produto-estrelas"></p>
+
+                    <div class="icones-produtos">
+                        <img src="img/cart.png" alt="Carrinho" title="Comprar">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                    </div>
+                    </li>
+
+                    <li class="produtos">
+                        <a href="#"><img alt="Uva Passa Preta" title="Uva Passa Preta" src="img/uva-passa-preta.jpg" /></a>
+                        <p class="produto-descricao">Uva Passa Preta <br>1kg</p>
+
+                        <p class="produto-preco">R$ 17,74</p>
+                        <p class="produto-estrelas"></p>
+
+                    <div class="icones-produtos">
+                        <img src="img/cart.png" alt="Carrinho" title="Comprar">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                    </div>
+                    </li>
+
+                    <li class="produtos">
+                        <a href="#"><img alt="Mel Silvestre" title="Mel Silvestre" src="img/mel-silvestre.jpg" /></a>
+                        <p class="produto-descricao">Mel Silvestre Casa do Mel 1kg</p>
+
+                        <p class="produto-preco">R$ 36,38</p>
+                        <p class="produto-estrelas"></p>
+
+                    <div class="icones-produtos">
+                        <img src="img/cart.png" alt="Carrinho" title="Comprar">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                    </div>
+                    </li>
+
+                    <li class="produtos">
+                        <a href="#"><img alt="Macarrão Integral Espinafre" title="Macarrão Integral Espinafre" src="img/macarrao-integral-com-espinafre.jpg" /></a>
+                        <p class="produto-descricao">Macarrão Integral com Espinafre 200g</p>
+
+                        <p class="produto-preco">R$ 4,05</p>
+                        <p class="produto-estrelas"></p>
+
+                    <div class="icones-produtos">
+                        <img src="img/cart.png" alt="Carrinho" title="Comprar">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                    </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <a id="next" href="#"><img src="img/right-arrow.png"></a>
+        </section>
+
+
+                   
+
+
+        <h2 class="lancamentos_titulo">LANÇAMENTOS</h2>
+
+        <section class="ofertas_container">
+
+            <figure class="produtos">
+                <a href="#">
+                    <img src="img/manteiga-ghee-veg-com-sal-rosa.jpg" alt="Manteiga Veg" title="Manteiga Veg"
+                        class="produtos-imagem">
+                </a>
+                <figcaption class="produto-descricao">Manteiga Veg com Sal Rosa 200g</figcaption>
+
+                <figcaption class="produto-preco">R$ 22,59</figcaption>
+                <figcaption class="produto-estrelas"></figcaption>
+
+                <div class="icones-produtos">
+                    
+                    <img src="img/cart.png" alt="Carrinho" title="Comprar">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+
+                </div>
+            </figure>
+
+            <figure class="produtos">
+                <a href="#">
+                    <img src="img/pasta-de-amendoim.jpg" alt="Pasta de Amendoim" title="Pasta de Amendoim" class="produtos-imagem">
+                </a>
+                <figcaption class="produto-descricao">Pasta de Amendoim com Açúcar de Coco 500g</figcaption>
+
+                <figcaption class="produto-preco">R$ 11,75</figcaption>
+                <figcaption class="produto-estrelas"></figcaption>
+
+                <div class="icones-produtos">
+                    <img src="img/cart.png" alt="Carrinho" title="Comprar">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+            </figure>
+
+            <figure class="produtos">
+                <a href="#">
+                    <img src="img/geleia-real-cogumelo.jpg" alt="Geleia Real Cogumelo" Title="Geleia Real Cogumelo"
+                        class="produtos-imagem">
+                </a>
+                <figcaption class="produto-descricao">Geleia Real Cogumelo 90 cápsulas</figcaption>
+
+                <figcaption class="produto-preco">R$ 58,76</figcaption>
+                <figcaption class="produto-estrelas"></figcaption>
+
+                <div class="icones-produtos">
+                    <img src="img/cart.png" alt="Carrinho" title="Comprar">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+            </figure>
+
+
+            <figure class="produtos">
+                <a href="#">
+                    <img src="img/cha-verde-colageno.jpg" alt="Chá Verde Instantâneo" title="Chá Verde Instantâneo" class="produtos-imagem">
+                </a>
+                <figcaption class="produto-descricao">Chá Verde Instantâneo Colágeno e Stévia 220g</figcaption>
+
+                <figcaption class="produto-preco">R$ 39,42</figcaption>
+                <figcaption class="produto-estrelas"></figcaption>
+
+                <div class="icones-produtos">
+                    <img src="img/cart.png" alt="Carrinho" title="Comprar">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+            </figure>
+        </section>
+
+        <h2 class="destaques_titulo">DESTAQUES</h2>
+
+        <section class="ofertas_container">
+
+            <figure class="produtos">
+                <a href="#">
+                    <img src="img/mix-nuts-premium.jpg" alt="Mix Nuts" title="Mix Nuts"
+                        class="produtos-imagem">
+                </a>
+                <figcaption class="produto-descricao">Mix Nuts Premium Coco e Damasco 200g</figcaption>
+
+                <figcaption class="produto-preco">R$ 22,55</figcaption>
+                <figcaption class="produto-estrelas"></figcaption>
+
+                <div class="icones-produtos">
+                    <img src="img/cart.png" alt="Carrinho" title="Comprar">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+            </figure>
+
+            <figure class="produtos">
+                <a href="#">
+                    <img src="img/barra_de_cereais_vegana.jpg" alt="Barra de Cereais Veg" title="Barra de Cereais Veg" class="produtos-imagem">
+                </a>
+                <figcaption class="produto-descricao">Barra de Cereais Veg com Castanha 22g</figcaption>
+
+                <figcaption class="produto-preco">R$ 1,20</figcaption>
+                <figcaption class="produto-estrelas"></figcaption>
+
+                <div class="icones-produtos">
+                    <img src="img/cart.png" alt="Carrinho" title="Comprar">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+            </figure>
+
+            <figure class="produtos">
+                <a href="#">
+                    <img src="img/acucar-de-coco.jpg" alt="Açúcar de coco" title="Açúcar de coco"
+                        class="produtos-imagem">
+                </a>
+                <figcaption class="produto-descricao">Açúcar de Coco Orgânico 500 g</figcaption>
+
+                <figcaption class="produto-preco">R$ 21,52</figcaption>
+                <figcaption class="produto-estrelas"></figcaption>
+
+                <div class="icones-produtos">
+                    <img src="img/cart.png" alt="Carrinho" title="Comprar">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+            </figure>
+
+
+            <figure class="produtos">
+                <a href="#">
+                    <img src="img/good-soy-ervas-finas.jpg" alt="Snack de Soja Ervas Finas" title="Snack de Soja Ervas Finas" class="produtos-imagem">
+                </a>
+                <figcaption class="produto-descricao">Snack de Soja Ervas Finas 25g</figcaption>
+
+                <figcaption class="produto-preco">R$ 3,42</figcaption>
+                <figcaption class="produto-estrelas"></figcaption>
+
+                <div class="icones-produtos">
+                    <img src="img/cart.png" alt="Carrinho" title="Comprar">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#19b425">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+            </figure>
+        </section>
+
+        <hr>
+
+        <h2>Onde estamos</h2>
+
+        <section class="mapa">
+
+            <div class="dados-loja">
+
+                <p><img src="img/placeholder.png">&nbsp;Endereço:</p>
+                <p class="regular">Av. São Paulo, 209-c - Centro | Londrina - PR</p><br>
+                <p><img src="img/tempo.png">&nbsp;Horário de atendimento:</p>
+                <p class="regular">Segunda a Sexta: 8:00h - 18:00h</p>
+                <p class="regular">Sábado: 8:00h - 13:00h</p><br>
+                <p><img src="img/smartphone.png">&nbsp;Contato:</p>
+                <p class="regular">+55 (43) 3456-7890</p><br>
+                <p><img src="img/aviao-de-papel.png">&nbsp;<img class="icones-dados" src="img/whatsapp.png">&nbsp;Delivery:</p>
+                <p class="regular">+55 (43) 97890-1234</p>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1832.0686902676919!2d-51.16015392228884!3d-23.310773789802187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb45eb6fcda383%3A0x8d8500c94dcb321c!2sArmaz%C3%A9m%20Produtos%20Naturais!5e0!3m2!1spt-BR!2sbr!4v1645798549264!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mapa-img"></iframe>
+
+        </section>
+
+        <hr>
+
+    </main>
+</body>
+
+<footer>
+    <p>&#169;Copyright 2022 Manjar Natural - Todos os direitos reservados.</p>
+</footer>
+
+</html>

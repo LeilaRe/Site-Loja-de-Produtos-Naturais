@@ -1,0 +1,152 @@
+:root {
+    --verde:#19b425;
+    --verdeClaro: rgb(194, 248, 194);
+    --borderRad: 10px;
+    --laranja:rgb(235, 148, 49);
+}
+
+#titulo-produto img {
+    width: 20px;
+    height: 20px;
+    text-align: left;
+}
+
+#titulo-produto{
+    font-size: 18px;
+    font-weight: 500;
+    color:var(--verde);
+    text-align: left;
+    text-decoration: none;
+    margin: 2.5% 0 0 0;
+}
+
+.produto-img {
+    width:500px;
+    margin: 2.5% 0 2.5% 5%;
+    border-radius: var(--borderRad);
+    box-sizing: border-box;
+}
+
+.produto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+}    
+
+.dados-produto {
+    text-align: left;
+    font-size: 18px;
+    margin-right:5%;
+    margin-left:5%;
+    line-height: 20px;
+    width:50%;
+}
+
+.dados-produto p:not(.regular,#ref) {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.dados-produto #ref {
+    font-size:12px;
+}
+
+.tamanho-container {
+    border-top: 2px solid rgb(184, 183, 183);
+}
+
+.tamanho-container label{
+    cursor: pointer;
+    border: 1px solid rgb(184, 183, 183);
+    border-radius: 200px;
+    padding:5px;
+}
+
+#btn-tamanho1:checked, #btn-tamanho2:checked {
+    transform: scale(1.4);
+}
+
+.dados-compra-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--verdeClaro);
+    border-radius: var(--borderRad);
+    padding: 2em;
+}
+
+
+#quantidade {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.btn-quantidade {
+    cursor: pointer;
+    border-radius: 200px;
+    background-color: var(--verde);
+    border-color: white;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color:white;
+    font-weight: 600;
+    width:35px;
+    height:35px;
+}
+
+#btn-comprar {
+    cursor: pointer;
+    width:150px;
+    height: 50px;
+    border-radius: var(--borderRad);
+    background-color: var(--verde);
+    border-color: white;
+    margin-right: 20%;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color:white;
+    font-weight: 600;
+}
+
+.informacoes-produto {
+    font-size: 18px;
+    border:solid 2px #19b420;
+    border-radius: var(--borderRad);
+    padding: 1em;
+    margin:2.5%;
+    box-sizing: border-box;
+}
+
+.informacoes-produto .titulo-secao {
+    font-weight: 600;
+}
+
+.informacoes-produto ul {
+    list-style-type:disc;
+    margin-left: 1em;
+}
+
+hr {
+    margin: 2.5% 0 0 0;
+}
+
+.informacoes-produto table, th, td {
+    border: 1px solid rgb(154, 156, 154);
+    width: 620px;
+    text-align: center;
+    box-sizing: border-box;
+    margin:0 25%;
+  }
+
+.informacoes-produto #tabela-cabecalho {
+    font-weight: 600;
+}
+
+.informacoes-produto .rodape {
+    font-size: 14px;
+    margin: 0 25%;
+    line-height: 1.5em;
+}
